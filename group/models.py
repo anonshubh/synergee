@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Interest(models.Models):
+class Interest(models.Model):
     """
     Category of One's Interest
     """
@@ -23,6 +23,9 @@ class Member(models.Model):
     interests = models.ManyToManyField(Interest)
     github_url = models.URLField(blank=True,null=True)
     linkedin_url = models.URLField(blank=True,null=True)
+
+    class Meta:
+        ordering = ('first_name',)
 
     def __str__(self):
         return str(self.email)

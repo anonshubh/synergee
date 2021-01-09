@@ -23,9 +23,11 @@ class DetailProfile(View):
     """
 
     def get(self,request,id):
-        member = get_object_or_404(pk=id)
+        members = Member.objects.all()
+        member = get_object_or_404(Member,pk=id)
         context = {
-            'member':member
+            'member':member,
+            'members':members
         }
         return render(request,'group/profile.html',context)
 
