@@ -16,7 +16,8 @@ class Member(models.Model):
     """
     Information/Data of Group Member
     """
-    name = models.CharField(max_length=56)
+    first_name = models.CharField(max_length=56)
+    last_name = models.CharField(max_length=56)
     image = models.URLField()
     email = models.EmailField(max_length=56)
     interests = models.ManyToManyField(Interest)

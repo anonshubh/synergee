@@ -10,7 +10,11 @@ class ListProfile(View):
     """
 
     def get(self,request):
-        pass
+        members = Member.objects.all()
+        context = {
+            'members':members
+        }
+        return render(request,'group/index.html',context)
 
 
 class DetailProfile(View):
