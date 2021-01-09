@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import View
 
 from .models import Member,Interest
@@ -23,4 +23,9 @@ class DetailProfile(View):
     """
 
     def get(self,request,id):
-        pass
+        member = get_object_or_404(pk=id)
+        context = {
+            'member':member
+        }
+        return render(request,'group/profile.html',context)
+
