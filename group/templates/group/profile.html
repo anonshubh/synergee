@@ -2,20 +2,22 @@
 {% load static %}
 {% block content %}
 
-<div class="row">
-    <div class="col">
-        <img src="{{member.image}}" alt="Profile Picture">
-        <p>Name: {{member.first_name}} {{member.last_name}}</p>
-        <p>Email: {{member.email}}</p>
-        <p>Interests</p>
-        <ul>
-            {% for interest in member.interests.all %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="{{member.image}}" alt="Profile Picture">
+            <p>Name: {{member.first_name}} {{member.last_name}}</p>
+            <p>Email: {{member.email}}</p>
+            <p>Interests</p>
+            <ul>
+                {% for interest in member.interests.all %}
                 <li>{{interest.type}} ({{interest.familiarity}})</li>
-            {% empty %}
+                {% empty %}
                 <p>No Interests Found</p>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
-
+    
 {% endblock %}

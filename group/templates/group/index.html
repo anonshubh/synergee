@@ -2,19 +2,21 @@
 {% load static %}
 {% block content %}
 
-<div class="row">
+<div class="container-fluid">
+  <div class="row">
     {% for member in members %}
-    <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
-            <img src="{{member.image}}" class="card-img-top" alt="Profile Picture">
-            <div class="card-body">
-              <p class="card-text">{{member.first_name}}</p>
-            </div>
-          </div>
+    <div class="col-lg-3">
+      <div class="card" style="width: 18rem; height: 20rem;">
+        <img src="{{member.image}}" class="card-img-top" alt="Profile Picture">
+        <div class="card-body">
+          <p class="card-text">{{member.first_name}}</p>
+        </div>
+      </div>
     </div>
     {% empty %}
     <p>Kindly, Add Members!</p>
     {% endfor %}
+  </div>
 </div>
 
 {% endblock %}
