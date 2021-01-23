@@ -10,3 +10,16 @@
     border-radius: 30px;
     float: right;
 }
+
+@media (min-width:576px){
+    .card-explore-link{
+        margin-left: 0%;
+    
+    }
+}
+
+@media (min-width:992px){
+    .card-explore-link{
+        margin-left: 85%;
+    }
+}
