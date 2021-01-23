@@ -4,3 +4,9 @@
         right: 15px;
     }
 }
+
+.corner-pic{
+    width: 10%;
+    border-radius: 30px;
+    float: right;
+}

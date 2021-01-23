@@ -3,19 +3,20 @@
 {% block content %}
 
 <div class="container">
+    <img class="corner-pic" src="{{member.image}}" alt="Profile Picture">
     <div class="row">
         <div class="col">
-            <img src="{{member.image}}" alt="Profile Picture">
-            <p>Name: {{member.first_name}} {{member.last_name}}</p>
-            <p>Email: {{member.email}}</p>
-            <p>Interests</p>
-            <ul>
-                {% for interest in member.interests.all %}
-                <li>{{interest.type}} ({{interest.familiarity}})</li>
-                {% empty %}
+            {% for interest in member.interests.all %}
+                <div class="card mb-4" style="width: 75%;">
+                    <div class="card-body">
+                    <h5 class="card-title">{{interest.type}}</h5>
+                    <p class="card-text">{{interest.definition}}</p>
+                    <a href="#" class="card-link ms-2">Explore</a>
+                    </div>
+                </div>
+            {% empty %}
                 <p>No Interests Found</p>
-                {% endfor %}
-            </ul>
+            {% endfor %}
         </div>
     </div>
 </div>

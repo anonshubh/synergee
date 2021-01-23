@@ -30,4 +30,3 @@ class DetailProfile(View):
             'members':members
         }
         return render(request,'group/profile.html',context)
-
