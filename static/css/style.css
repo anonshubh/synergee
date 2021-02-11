@@ -1,13 +1,15 @@
-@media (min-width: 768px){
-    .pull-right{
-        position: absolute;
-        right: 15px;
-    }
+body{
+    background-color: #7f789b;
+}
+
+.navbar{
+   background-color: rgb(236, 154, 154);
+   opacity: 70%;
 }
 
 .corner-pic{
     width: 10%;
-    border-radius: 30px;
+    border-radius: 50%;
     float: right;
 }
 
@@ -16,10 +18,43 @@
         margin-left: 0%;
     
     }
+
+    .cat-card{
+        width: 75%;
+    }
 }
 
 @media (min-width:992px){
     .card-explore-link{
         margin-left: 85%;
     }
+
+    .cat-card{
+        width: 75%;
+    }
 }
+
+.card-explore-link{
+    color: rgb(216, 236, 101);
+}
+
+.main-description{
+    text-align: center;
+}
+
+.main-card{
+    border-radius: 14px;
+    background: linear-gradient(225deg, #726c8c, #8880a6);
+    box-shadow:  -33px 33px 67px #33303e, 33px -33px 67px #cbc0f8;
+}
+
+.cat-card{
+    border-radius: 14px;
+    background: linear-gradient(225deg, #726c8c, #8880a6);
+    box-shadow:  -33px 33px 67px #33303e, 33px -33px 67px #cbc0f8;
+}
+
+.resume-link{
+    color: rgb(216, 236, 101);
+}
+

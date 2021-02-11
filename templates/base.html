@@ -17,25 +17,21 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'list-profile' %}">Synergee</a>
+      <a class="navbar-brand ms-3" href="{% url 'list-profile' %}">Synergee</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
           {% for member in members %}
           <li class="nav-item">
             <a class="nav-link active" aria-current="page"
               href="{% url 'detail-profile' member.id %}">{{member.first_name|capfirst}}</a>
           </li>
           {% endfor %}
-          <form class="d-flex pull-right">
-            <input class="form-control me-2" type="search" placeholder="Category" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
-          </form>
       </div>
     </div>
   </nav>

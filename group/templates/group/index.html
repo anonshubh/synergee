@@ -4,12 +4,18 @@
 
 <div class="container-fluid">
   <div class="row">
+    <div class="col-12 mt-3 mb-5">
+      <h4 class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, architecto laborum minus par</h4>
+    </div>
+  </div>
+  <div class="row">
     {% for member in members %}
-    <div class="col-lg-3">
-      <div class="card" style="width: 18rem; height: 20rem;">
-        <img src="{{member.image}}" class="card-img-top" alt="Profile Picture">
+    <div class="col-lg-3 mt-3">
+      <div class="card main-card" style="width: 18rem; height: 20rem;">
+        <img src="https://ik.imagekit.io/lddlbwmmx2g/cam-1612528810004_9aphZZFVf.jpg" class="card-img-top" alt="Profile Picture">
         <div class="card-body">
-          <p class="card-text">{{member.first_name}}</p>
+          <p class="card-text">{{member.first_name}} {{member.last_name}}</p>
+          <p class="card-text"><a class="resume-link" href="">Documented  Resume</a></p>
         </div>
       </div>
     </div>
