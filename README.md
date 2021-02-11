@@ -4,6 +4,7 @@
 ---
 *Requirements:- Python 3.8+*<br>
 1) `git clone https://github.com/anonshubh/synergee.git`
+(For Developer: Use your Forked URL) 
 2) `cd synergee`
 3) `python -m venv env`
 4) `source env/bin/activate` (Mac/Linux)<br>
