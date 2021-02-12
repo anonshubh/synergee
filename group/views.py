@@ -3,7 +3,6 @@ from django.views.generic import View
 from django.core.exceptions import ValidationError
 from django.core.mail import send_mail
 from django.conf import settings
-from django.contrib import messages
 
 from .models import Member,Interest,Contact
 from .forms import ContactForm
@@ -55,7 +54,6 @@ class ListProfile(View):
                 receivers_email_list,
                 fail_silently=False,
             )
-            messages.info(request, 'Your Message has been Sent!')
             return redirect('thank-you')
 
         raise ValidationError
