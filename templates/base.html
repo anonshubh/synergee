@@ -16,13 +16,20 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a38aedba59.js" crossorigin="anonymous"></script>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
   <title>Synergee</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand ms-3" href="{% url 'list-profile' %}">Synergee</a>
+      <a class="navbar-brand ms-3" href="{% url 'list-profile' %}"><span class="synergee">Synergee</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +37,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item text-center">
-            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+            <a id='contact-link' class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
@@ -44,7 +51,7 @@
     </div>
   </nav>
 
-  <div class="mt-3">
+  <div class="mt-3 scroll-snap">
     {% block content %} {% endblock %}
   </div>
 

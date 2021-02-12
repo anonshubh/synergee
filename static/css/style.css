@@ -7,7 +7,8 @@ html {
 }  
 
 .navbar{
-   background-color: rgb(236, 154, 154);
+   /* background-color: rgb(236, 154, 154); */
+   background-color: #33303e;
    opacity: 70%;
 }
 
@@ -44,10 +45,12 @@ html {
 
     #profile-cards{
         height: 100vh;
+        /* scroll-snap-align: start; */
       }
     
     #contact{
         height: 100vh;
+        /* scroll-snap-align: start; */
     }
 }
 
@@ -63,6 +66,8 @@ html {
 
 .main-description{
     text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 35px;
 }
 
 .main-card{
@@ -78,6 +83,18 @@ html {
 }
 
 .resume-link{
+    padding: 9px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    font-size: small;
+    background-color: rgba(37, 2, 78, 0.466);
+}
+
+.resume-link:hover{
     color: rgb(216, 236, 101);
 }
 
@@ -95,9 +112,9 @@ html {
   
   *::-webkit-scrollbar-track {
     background: #8e87ac;    
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: rgb(216, 236, 101);
     border-radius: 20px;
     border: 3px solid #7f789b;
@@ -106,17 +123,42 @@ html {
 
 .github-link,.linkedin-link,.instagram-link{
     color: black;
-  }
+}
+
+.github-link:hover{
+    color: aliceblue;
+}
+
+.instagram-link:hover{
+    color: #eee234d7;
+}
 
 .profile-pic-trans:hover
 {
-    border-radius:50%;
+    border-radius:20px;
 
     box-shadow:
                 1px 1px rgb(216, 236, 101),
                 2px 2px rgb(216, 236, 101),
                 3px 3px rgb(216, 236, 101);
         -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+        transform: translateX(-3px); 
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        z-index: 1;
 }
+
+
+/* .scroll-snap{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+} */
+
+.synergee{
+    font-family: 'Alegreya', serif;
+    font-size: x-large;
+    color: aliceblue;
+}
+
 
