@@ -85,3 +85,7 @@ body{
     border-radius: 20px;
     border: 3px solid #7f789b;
   }
+
+  .github-link,.linkedin-link,.instagram-link{
+    color: black;
+  }

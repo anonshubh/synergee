@@ -24,6 +24,7 @@ class Member(models.Model):
     interests = models.ManyToManyField(Interest)
     github_url = models.URLField(blank=True,null=True)
     linkedin_url = models.URLField(blank=True,null=True)
+    instagram_url = models.URLField(blank=True,null=True)
     resume_url = models.URLField(blank=True,null=True)
 
     class Meta:
