@@ -3,6 +3,7 @@ from django.views.generic import View
 from django.core.exceptions import ValidationError
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib import messages
 
 from .models import Member,Interest,Contact
 from .forms import ContactForm
@@ -31,7 +32,7 @@ class ListProfile(View):
 
             email = cleaned_data.get('email',None)
             name = cleaned_data.get('name',None)
-            content = cleaned_data.get('content',None)
+            your_message = cleaned_data.get('your_message',None)
             receiver = cleaned_data.get('receiver',None)
             entire_team = cleaned_data.get('entire_team',None)
 
@@ -49,12 +50,13 @@ class ListProfile(View):
 
             send_mail(
                 'Contact Mail',
-                f'From: {name}\nMessage: {content}',
+                f'From: {name}\nMessage: {your_message}',
                 settings.DEFAULT_FROM_EMAIL,
                 receivers_email_list,
                 fail_silently=False,
             )
-            return redirect('list-profile')
+            messages.info(request, 'Your Message has been Sent!')
+            return redirect('thank-you')
 
         raise ValidationError
 

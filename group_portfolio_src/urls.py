@@ -16,8 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from django.views.generic import TemplateView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('group.urls')),
     path('blog/',include('blog.urls')),
+
+    path('thank-you/',TemplateView.as_view(template_name='group/success-message.html'),name='thank-you'),
+
 ]
