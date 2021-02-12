@@ -24,13 +24,19 @@ body{
     }
 }
 
+@media (max-width: 576px) {
+    .corner-pic{
+        display: none;
+    }
+}
+
 @media (min-width:992px){
     .card-explore-link{
         margin-left: 85%;
     }
 
     .cat-card{
-        width: 75%;
+        width: 90%;
     }
 }
 
@@ -58,3 +64,24 @@ body{
     color: rgb(216, 236, 101);
 }
 
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(216, 236, 101) #8e87ac;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #8e87ac;    
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 236, 101);
+    border-radius: 20px;
+    border: 3px solid #7f789b;
+  }
