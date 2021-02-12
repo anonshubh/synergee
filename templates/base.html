@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand ms-3" href="{% url 'list-profile' %}">Synergee</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,9 +28,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item text-center">
+            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+          </li>
+        </ul>
         <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
           {% for member in members %}
-          <li class="nav-item">
+          <li class="nav-item text-center">
             <a class="nav-link active" aria-current="page"
               href="{% url 'detail-profile' member.id %}">{{member.first_name|capfirst}}</a>
           </li>

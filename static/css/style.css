@@ -2,8 +2,13 @@ body{
     background-color: #7f789b;
 }
 
+html {
+    scroll-behavior: smooth;
+}  
+
 .navbar{
    background-color: rgb(236, 154, 154);
+   /* height: 65px; */
    opacity: 70%;
 }
 
@@ -16,7 +21,6 @@ body{
 @media (min-width:576px){
     .card-explore-link{
         margin-left: 0%;
-    
     }
 
     .cat-card{
@@ -38,6 +42,20 @@ body{
     .cat-card{
         width: 90%;
     }
+
+    #profile-cards{
+        height: 100vh;
+      }
+    
+    #contact{
+        height: 100vh;
+    }
+}
+
+#contact{
+    padding-top: 75px;
+    /* background-color: #988fbd; */
+    background-color: white;
 }
 
 .card-explore-link{
@@ -86,6 +104,7 @@ body{
     border: 3px solid #7f789b;
   }
 
-  .github-link,.linkedin-link,.instagram-link{
+.github-link,.linkedin-link,.instagram-link{
     color: black;
   }
+
