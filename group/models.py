@@ -42,7 +42,7 @@ class Contact(models.Model):
     email = models.EmailField(max_length=56)
     name = models.CharField(max_length=56)
     content = models.TextField()
-    receiver = models.ForeignKey(Member,on_delete=models.CASCADE,null=True)
+    receiver = models.ForeignKey(Member,on_delete=models.CASCADE,null=True,blank=True)
     entire_team = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True)
 
@@ -50,6 +50,6 @@ class Contact(models.Model):
         ordering = ('-timestamp',)
 
     def __str__(self):
-        return f"From:{email}"
+        return f"From:{self.email}"
 
 
