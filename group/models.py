@@ -31,4 +31,25 @@ class Member(models.Model):
         ordering = ('first_name',)
 
     def __str__(self):
-        return str(self.email)
+        return str(self.first_name)
+
+
+
+class Contact(models.Model):
+    """
+    Information/Data of Sender
+    """
+    email = models.EmailField(max_length=56)
+    name = models.CharField(max_length=56)
+    content = models.TextField()
+    receiver = models.ForeignKey(Member,on_delete=models.CASCADE,null=True)
+    entire_team = models.BooleanField(default=False)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-timestamp',)
+
+    def __str__(self):
+        return f"From:{email}"
+
+

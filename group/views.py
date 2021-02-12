@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import View
 
-from .models import Member,Interest
+from .models import Member,Interest,Contact
+from .forms import ContactForm
 
 
 class ListProfile(View):
@@ -11,10 +12,16 @@ class ListProfile(View):
 
     def get(self,request):
         members = Member.objects.all()
+        form = ContactForm()
         context = {
-            'members':members
+            'members':members,
+            'form':form
         }
         return render(request,'group/index.html',context)
+    
+
+    def post(self,request):
+        pass
 
 
 class DetailProfile(View):

@@ -8,7 +8,6 @@ html {
 
 .navbar{
    background-color: rgb(236, 154, 154);
-   /* height: 65px; */
    opacity: 70%;
 }
 
@@ -55,7 +54,7 @@ html {
 #contact{
     padding-top: 75px;
     /* background-color: #988fbd; */
-    background-color: white;
+    /* background-color: white; */
 }
 
 .card-explore-link{
