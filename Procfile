@@ -1,0 +1,1 @@
+web: gunicorn group_portfolio_src.wsgi
