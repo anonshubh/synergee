@@ -1,4 +1,4 @@
-## Group Portfolio App
+## A Real-Time Group Portfolio App that enables to add new members dynamically.
 
 **Setup and Run Locally**
 ---
