@@ -49,7 +49,7 @@ class ListProfile(View):
 
             send_mail(
                 'Contact Mail',
-                f'From: {name}\nMessage: {your_message}',
+                f'From: {name}, {email}\nMessage: {your_message}',
                 settings.DEFAULT_FROM_EMAIL,
                 receivers_email_list,
                 fail_silently=False,
