@@ -35,10 +35,10 @@ html {
     .footer-line-2{
         display: block;
     }
-    /* .main-card{
+    .main-card{
         margin-left: 45px;
         margin-bottom: 15px;
-    } */
+    }
 }
 
 @media (min-width:992px){
