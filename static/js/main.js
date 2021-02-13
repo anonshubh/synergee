@@ -18,10 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
     catch{
         console.log("Continued");
     }
-
-    let contactButton = document.querySelector('#contact-link');
-
-    if (window.location.href != "http://127.0.0.1:8000/"){
-        contactButton.style.display = 'none';
-    }
 });
