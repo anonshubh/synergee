@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container">
-    <img class="corner-pic" src="https://ik.imagekit.io/lddlbwmmx2g/cam-1612528810004_9aphZZFVf.jpg" alt="Profile Picture">
+    <img class="corner-pic" src="{{member.image}}" alt="Profile Picture">
     <div class="row">
         {% for interest in member.interests.all %}
         <div class="col-12">
