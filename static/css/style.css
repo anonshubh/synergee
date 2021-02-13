@@ -25,12 +25,20 @@ html {
     .cat-card{
         width: 75%;
     }
+
 }
 
 @media (max-width: 576px) {
     .corner-pic{
         display: none;
     }
+    .footer-line-2{
+        display: block;
+    }
+    /* .main-card{
+        margin-left: 45px;
+        margin-bottom: 15px;
+    } */
 }
 
 @media (min-width:992px){
@@ -48,6 +56,11 @@ html {
     
     #contact{
         height: 100vh;
+    }
+
+    .footer-line-2{
+        font-size: medium;
+        display: inline-block;
     }
 }
 
@@ -151,15 +164,12 @@ html {
     color: aliceblue;
 }
 
+
 .footer-line-1{
-
-}
-
-.footer-line-2{
     font-size: medium;
     font-weight: bold;
 }
 
-.footer-line-3{
+.footer-line-2{
     font-size: medium;
 }
