@@ -5,15 +5,15 @@
 
 <div id="profile-cards" class="container-fluid">
   <div class="row">
-    <div class="col-12 mt-3 mb-5">
+    <div class="col-12 mt-3 mb-4">
       <h4 class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, architecto laborum minus par</h4>
     </div>
   </div>
   <div class="row">
     {% for member in members %}
-    <div class="col-lg-3 mt-3">
-      <div class="card main-card" style="width: 18rem; height: 20rem;">
-        <img src="{{member.image}}" class="card-img-top profile-pic-trans" alt="Profile Picture">
+    <div class="col-lg-3 mt-1">
+      <div class="card main-card" style="width: 18rem; height: 28rem;">
+        <img  src="{{member.image}}" class="card-img-top profile-pic-trans" alt="Profile Picture">
         <div class="card-body">
           <h5 class="card-text text-center">{{member.first_name}} {{member.last_name}}</h5>
           <p class="card-text text-center"><a class="resume-link" href="{{member.resume_url}}">View Resume</a></p>
