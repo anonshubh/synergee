@@ -10,5 +10,5 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = '__all__'
         widgets = {
-            'your_message':forms.Textarea(attrs={'rows':7,'cols':40})
+            'your_message':forms.Textarea(attrs={'rows':4,'cols':40})
         }

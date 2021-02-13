@@ -7,7 +7,6 @@ html {
 }  
 
 .navbar{
-   /* background-color: rgb(236, 154, 154); */
    background-color: #33303e;
    opacity: 70%;
 }
@@ -45,19 +44,15 @@ html {
 
     #profile-cards{
         height: 100vh;
-        /* scroll-snap-align: start; */
       }
     
     #contact{
         height: 100vh;
-        /* scroll-snap-align: start; */
     }
 }
 
 #contact{
     padding-top: 75px;
-    /* background-color: #988fbd; */
-    /* background-color: white; */
 }
 
 .card-explore-link{
@@ -150,15 +145,21 @@ html {
 }
 
 
-/* .scroll-snap{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-} */
-
 .synergee{
     font-family: 'Alegreya', serif;
     font-size: x-large;
     color: aliceblue;
 }
 
+.footer-line-1{
 
+}
+
+.footer-line-2{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.footer-line-3{
+    font-size: medium;
+}
