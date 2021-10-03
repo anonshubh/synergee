@@ -19,7 +19,7 @@
 1) New Members can be added to group in real-time via Synergee's Admin Panel. <br>
 2) Every Member's interests can be added/modifed. <br>
 3) Every Members can post their Blogs on their Interests. <br>
-4) Contact-Us functionality enables the users to reach a individual group member or the entire team.<br>
+4) Contact-Us functionality enables the users to reach a individual group member or the entire team using your email-id.<br>
 
 **For Developers**
 <br>
