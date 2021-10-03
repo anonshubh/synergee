@@ -28,7 +28,7 @@ html {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .corner-pic{
         display: none;
     }
@@ -41,7 +41,7 @@ html {
     }
 }
 
-@media (min-width:992px){
+@media (min-width:993px){
     .card-explore-link{
         margin-left: 85%;
     }
@@ -138,7 +138,7 @@ html {
 }
 
 .instagram-link:hover{
-    color: #eee234d7;
+    color: #eee214d7;
 }
 
 .profile-pic-trans:hover
