@@ -7,13 +7,13 @@ html {
 }  
 
 .navbar{
-   background-color: #33303e;
-   opacity: 70%;
+   background-color: #32303e;
+   opacity: 71%;
 }
 
 .corner-pic{
     width: 10%;
-    border-radius: 50%;
+    border-radius: 51%;
     float: right;
 }
 
