@@ -1,4 +1,6 @@
-## A Real-Time Group Portfolio App that enables to add new members dynamically.
+# Synergee
+---
+A Real-Time Group Portfolio App that enables to add new members dynamically,with similar interests.One can get in touch with other people,make plans and forge friendships using Synergee.
 
 **Setup and Run Locally**
 ---
